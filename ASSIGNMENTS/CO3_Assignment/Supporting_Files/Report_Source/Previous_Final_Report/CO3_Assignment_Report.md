@@ -1,7 +1,7 @@
 # CO3 Assignment 3 Divide and Conquer Algorithms
 
 **Course:** CSA06 Design and Analysis of Algorithms  
-**Student:** Hitesh C, Register No. 192524005  
+**Student:** Srikrishna P, Register No. 192511435  
 **Partner:** [Add partner name and register number]  
 **Assignment mode:** Pair work  
 **Question set:** Q1-Q7
@@ -14,7 +14,7 @@ Q7 uses maximum-subarray sum as a working example because the supplied question 
 
 ## Method and evidence
 
-Programs use Python 3.10 or later. The experiment generator uses fixed seed 192524005. Counts are instrumented algorithm operations; timing values are medians of three runs except where the table explicitly records one run. Timing values depend on runtime and machine. CSV files preserve raw results. Output images are rendered from each program's saved stdout log, not captured from a live terminal window.
+Programs use Python 3.10 or later. The experiment generator uses fixed seed 192511435. Counts are instrumented algorithm operations; timing values are medians of three runs except where the table explicitly records one run. Timing values depend on runtime and machine. CSV files preserve raw results. Output images are rendered from each program's saved stdout log, not captured from a live terminal window.
 
 The selected input sizes are stated in the experiment tables because the question file does not provide numeric size ranges. Correctness was checked against independent/reference implementations, including randomized tests for sorting, multiplication, matrix products, closest pair, selection, subset sum, and maximum subarray.
 
