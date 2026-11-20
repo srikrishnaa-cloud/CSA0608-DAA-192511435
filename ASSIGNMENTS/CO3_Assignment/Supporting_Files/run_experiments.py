@@ -95,7 +95,7 @@ def chart(title: str, labels: list[str], series: list[tuple[str, list[float], st
 
 
 def run_all() -> None:
-    rng = random.Random(192524005)
+    rng = random.Random(192511435)
     # Q1: comparison counts for powers of two.
     rows = []
     for n in (8, 16, 32, 64, 128, 256, 512):
@@ -246,7 +246,7 @@ def run_all() -> None:
         ("D&C boundary additions", [r["dc_boundary_additions"] for r in rows], "#087e8b"),
         ("brute-force sum updates", [r["brute_subarray_sum_updates"] for r in rows], "#ff5a5f")], CHARTS/"q7_work_counts.png")
     (RESULTS / "experiment_run.txt").write_text(
-        "Experiments use deterministic seed 192524005. Timing columns are medians of repeated runs where shown; Q6 first-pivot worst-case and exhaustive subset-sum baselines are single runs. Timings are environment-specific. All algorithm pairs were checked for equal results on the same input before recording the comparison.\n",
+        "Experiments use deterministic seed 192511435. Timing columns are medians of repeated runs where shown; Q6 first-pivot worst-case and exhaustive subset-sum baselines are single runs. Timings are environment-specific. All algorithm pairs were checked for equal results on the same input before recording the comparison.\n",
         encoding="utf-8")
     print("Experiment tables and charts written to", RESULTS)
 
