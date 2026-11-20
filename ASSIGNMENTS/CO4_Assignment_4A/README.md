@@ -1,6 +1,6 @@
 # CO4 Assignment 4A - Algorithmic Design Through Pseudocode
 
-Student: 192511435
+Student: Srikrishna P (192511435)
 
 The official Part I brief is a pseudocode-first design assignment and says programming code is not accepted as pseudocode. The separate Python files and captured runs below are supplementary checks requested for this repository; the report keeps the language-independent pseudocode as the assessed design.
 
