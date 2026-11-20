@@ -108,7 +108,7 @@ def md_table(headers: list[str], data: list[list[str]]) -> str:
 def build_markdown() -> None:
     parts = ["# CO3 Assignment 3 Divide and Conquer Algorithms", "",
              "**Course:** CSA06 Design and Analysis of Algorithms  ",
-             "**Student:** Hitesh C, Register No. 192524005  ",
+             "**Student:** Srikrishna P, Register No. 192511435  ",
              "**Partner:** [Add partner name and register number]  ",
              "**Assignment mode:** Pair work  ",
              "**Question set:** Q1-Q7", "",
@@ -118,7 +118,7 @@ def build_markdown() -> None:
              "Q7 uses maximum-subarray sum as a working example because the supplied question file specifies the design process but not the actual challenge problem. Confirm this choice against the instructor's Day-4 prompt. The partner name, actual per-person contributions, and authentic pre-discussion Q7 proposals are left for both students to complete; the report does not claim that unverified pair-work steps have already happened.",
              "",
              "## Method and evidence", "",
-             "Programs use Python 3.10 or later. The experiment generator uses fixed seed 192524005. Counts are instrumented algorithm operations; timing values are medians of three runs except where the table explicitly records one run. Timing values depend on runtime and machine. CSV files preserve raw results. Output images are rendered from each program's saved stdout log, not captured from a live terminal window.",
+             "Programs use Python 3.10 or later. The experiment generator uses fixed seed 192511435. Counts are instrumented algorithm operations; timing values are medians of three runs except where the table explicitly records one run. Timing values depend on runtime and machine. CSV files preserve raw results. Output images are rendered from each program's saved stdout log, not captured from a live terminal window.",
              "",
              "The selected input sizes are stated in the experiment tables because the question file does not provide numeric size ranges. Correctness was checked against independent/reference implementations, including randomized tests for sorting, multiplication, matrix products, closest pair, selection, subset sum, and maximum subarray.",
              ""]
@@ -179,7 +179,7 @@ def style_doc(doc: Document, title: str) -> None:
     doc.styles["Heading 1"].font.size = Pt(17)
     doc.styles["Heading 1"].paragraph_format.space_before = Pt(7); doc.styles["Heading 1"].paragraph_format.space_after = Pt(7)
     doc.styles["Heading 2"].font.size = Pt(12)
-    doc.core_properties.title = title; doc.core_properties.author = "Hitesh C"
+    doc.core_properties.title = title; doc.core_properties.author = "Srikrishna P"
 
 
 def add_word_table(doc: Document, headers: list[str], data: list[list[str]], font_size=8.1) -> None:
@@ -221,7 +221,7 @@ def build_report_docx() -> None:
     title = doc.add_paragraph(style="Title"); title.add_run("CO3 Assignment 3\nDivide and Conquer Algorithms")
     p = doc.add_paragraph("CSA06 Design and Analysis of Algorithms"); p.runs[0].font.size = Pt(15)
     doc.add_paragraph("Q1-Q7 technical report and experimental comparison")
-    doc.add_paragraph("Student: Hitesh C  |  Register No.: 192524005")
+    doc.add_paragraph("Student: Srikrishna P  |  Register No.: 192511435")
     doc.add_paragraph("Partner: [Add partner name and register number]")
     doc.add_paragraph("Pair assignment | CO3")
     doc.add_paragraph("Prepared from the supplied assignment brief and recorded program runs")
@@ -230,7 +230,7 @@ def build_report_docx() -> None:
     doc.add_paragraph("This report presents implementations and measured comparisons for seven divide-and-conquer investigations: max/min and binary search; Merge Sort and Quick Sort; Karatsuba multiplication; Strassen multiplication; closest pair; Median of Medians and Meet-in-the-Middle; and a maximum-subarray design challenge. Programs were run, compared outputs were checked, and the harness passed ten test groups covering 50 deterministic randomized inputs plus edge cases.")
     doc.add_paragraph("Q7 uses maximum-subarray sum as a working example because the supplied question file specifies the design process but not the actual challenge problem. Confirm this choice against the instructor's Day-4 prompt. Partner identity, actual per-person contributions, and authentic pre-discussion Q7 proposals must be completed by both students; they are not represented as verified facts here.")
     doc.add_heading("Method and evidence", 1)
-    doc.add_paragraph("Programs use Python 3.10 or later. Experiments use fixed seed 192524005. Operation counts are instrumented algorithm work. Timings are medians of three runs except where stated otherwise, and vary by runtime and machine. CSV files retain the measurements. Output images are rendered from each program's saved stdout log, not from a live terminal window.")
+    doc.add_paragraph("Programs use Python 3.10 or later. Experiments use fixed seed 192511435. Operation counts are instrumented algorithm work. Timings are medians of three runs except where stated otherwise, and vary by runtime and machine. CSV files retain the measurements. Output images are rendered from each program's saved stdout log, not from a live terminal window.")
     doc.add_paragraph("The question file gives no numeric ranges for experiment sizes, so each question states the selected sizes in its CSV and table. Correctness was checked against reference implementations for sorting, multiplication, matrix products, closest pair, selection, subset sum, and maximum subarray.")
     for section in SECTIONS:
         doc.add_page_break(); doc.add_heading(section["name"], 1)
@@ -324,14 +324,14 @@ def build_report_pdf() -> None:
     story += [Spacer(1, 1.25*inch), Paragraph("CO3 Assignment 3<br/>Divide and Conquer Algorithms", styles["ReportTitle"]),
               Paragraph("CSA06 Design and Analysis of Algorithms", styles["ReportBody"]), Spacer(1, .35*inch),
               Paragraph("Q1-Q7 technical report and experimental comparison", styles["ReportBody"]),
-              Spacer(1, .4*inch), Paragraph("Student: Hitesh C  |  Register No.: 192524005", styles["ReportBody"]),
+              Spacer(1, .4*inch), Paragraph("Student: Srikrishna P  |  Register No.: 192511435", styles["ReportBody"]),
               Paragraph("Partner: [Add partner name and register number]", styles["ReportBody"]),
               Paragraph("Pair assignment | CO3", styles["ReportBody"]), PageBreak()]
     story += [Paragraph("Executive summary", styles["ReportH1"]),
               Paragraph("This report presents implementations and measured comparisons for seven divide-and-conquer investigations: max/min and binary search; Merge Sort and Quick Sort; Karatsuba multiplication; Strassen multiplication; closest pair; Median of Medians and Meet-in-the-Middle; and a maximum-subarray design challenge. Programs were run, compared outputs were checked, and the harness passed ten test groups covering 50 deterministic randomized inputs plus edge cases.", styles["ReportBody"]),
               Paragraph("Q7 uses maximum-subarray sum as a working example because the supplied question file specifies the design process but not the actual challenge problem. Confirm this choice against the instructor's Day-4 prompt. Partner identity, actual per-person contributions, and authentic pre-discussion Q7 proposals must be completed by both students; they are not represented as verified facts here.", styles["ReportBody"]),
               Paragraph("Method and evidence", styles["ReportH1"]),
-              Paragraph("Programs use Python 3.10 or later. Experiments use fixed seed 192524005. Operation counts are instrumented algorithm work. Timings are medians of three runs except where stated otherwise, and vary by runtime and machine. CSV files retain the measurements. Output images are rendered from each program's saved stdout log, not from a live terminal window. The question file does not state numeric ranges; selected sizes are recorded in the result tables.", styles["ReportBody"]), PageBreak()]
+              Paragraph("Programs use Python 3.10 or later. Experiments use fixed seed 192511435. Operation counts are instrumented algorithm work. Timings are medians of three runs except where stated otherwise, and vary by runtime and machine. CSV files retain the measurements. Output images are rendered from each program's saved stdout log, not from a live terminal window. The question file does not state numeric ranges; selected sizes are recorded in the result tables.", styles["ReportBody"]), PageBreak()]
     for index, section in enumerate(SECTIONS):
         if index > 0:
             story.append(PageBreak())
@@ -390,7 +390,7 @@ def build_report_pdf() -> None:
     FINAL.mkdir(parents=True, exist_ok=True)
     pdf = SimpleDocTemplate(str(FINAL/"CO3_Assignment_Report.pdf"), pagesize=letter,
                             rightMargin=.65*inch, leftMargin=.65*inch, topMargin=.58*inch, bottomMargin=.58*inch,
-                            title="CO3 Assignment 3 Divide and Conquer Algorithms", author="Hitesh C")
+                            title="CO3 Assignment 3 Divide and Conquer Algorithms", author="Srikrishna P")
     pdf.build(story)
 
 
