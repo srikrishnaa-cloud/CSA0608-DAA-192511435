@@ -1,7 +1,7 @@
 """
 CSA0608 - Design and Analysis of Algorithms
 Assignment 1 - CO1: Large-Scale Student Record Search System
-Author: Student (Reg No: 192511435)
+Author: Srikrishna P (Reg No: 192511435)
 
 This module implements, tests, and benchmarks three distinct algorithmic strategies
 for searching student records by Registration Number:
