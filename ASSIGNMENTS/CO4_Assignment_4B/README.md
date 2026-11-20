@@ -1,6 +1,6 @@
 # CO4 Assignment 4B - Algorithm Engineering
 
-Student: 192511435
+Student: Srikrishna P (192511435)
 
 ## Contents
 - `Source_Code/Task_1` through `Task_6`: standalone programs, captured execution logs, and output images.
